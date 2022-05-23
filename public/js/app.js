@@ -10,7 +10,7 @@ fetch("http://puzzle.mead.io/puzzle").then((reponse) => {
 */
 
 const getWeather = (address, callback) => {
-  fetch("weather?address=" + address + "").then((response) => {
+  fetch("/weather?address=" + address + "").then((response) => {
     response.json().then((data) => {
       callback(data);
     });
